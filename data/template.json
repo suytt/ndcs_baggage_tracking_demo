@@ -1,0 +1,66 @@
+{ 
+   "fullName":"TEST/NAMEMR",
+   "ticketNo":"1762326975243",
+   "confNo" : "AE6781",
+   "gender":"F",
+   "bagInfo":[ {
+            "id":790398991,
+            "tagNum":"176578062",
+            "routing":"LOS/DXB/LHR",
+            "lastActionCode":"OFFLOAD",
+            "lastActionDesc":"Offloaded at D19W",
+            "lastSeenStation":"LOS",
+            "lastSeenTimeGmt":"2019-10-15T01:18:12",
+            "bagArvDate":null,
+            "flightLegs": [ {
+               "flightInfo1":{
+                  "flightNo":"EK0001",
+                  "flightDate":"2019-10-15T00:00:00"
+               },
+               "flightInfo2":{
+                  "flightNo":"EK0784",
+                  "flightDate":"2019-10-14T00:00:00"
+               }}]
+         },
+         {
+            "id":790398991,
+            "tagnum":"176578062",
+            "routing":"LOS/LHR/DXB",
+            "lastActionCode":"OFFLOAD",
+            "lastActionDesc":"Offloaded at D19W",
+            "lastSeenStation":"LHR",
+            "lastSeenTimeGmt":"2019-10-15T01:18:12",
+            "bagArvDate":null,
+            "flightLegs": [{
+                  "flightInfo1": {
+                     "flightNo": "EK0001",
+                     "flightDate": "2019-10-15T00:00:00"
+                  },
+                  "flightInfo2": {
+                     "flightNo": "EK0784",
+                     "flightDate": "2019-10-14T00:00:00"
+                  }
+               }]
+         },
+         {
+            "id":790398991,
+            "tagnum":"176578062",
+            "routing":"LOS/LHR/DXB",
+            "lastActionCode":"OFFLOAD",
+            "lastActionDesc":"Offloaded at D19W",
+            "lastSeenStation":"LHR",
+            "lastSeenTimeGmt":"2019-10-15T01:18:12",
+            "bagArvDate":null,
+            "flightLegs": [{
+               "flightInfo1": {
+                  "flightNo": "EK0001",
+                  "flightDate": "2019-10-15T00:00:00"
+               },
+               "flightInfo2": {
+                  "flightNo": "EK0784",
+                  "flightDate": "2019-10-14T00:00:00"
+               }
+            }]
+         }
+      ]
+}
