@@ -135,12 +135,12 @@ public class Database
 		public _Connection(String endpoint, String tenantId, String userId, String fingerprint, String privateKey, String passPhrase, String compartment)
 		{
 			NoSQLHandleConfig config = new NoSQLHandleConfig(endpoint);
-            config.setConnectionPoolSize(1);
-            SignatureProvider authProvider = new SignatureProvider(tenantId, userId, fingerprint, privateKey, passPhrase.toCharArray());
-            config.setRequestTimeout(15000);
-            config.setAuthorizationProvider(authProvider);
-            config.configureDefaultRetryHandler(1, 10);
-            config.setDefaultCompartment(compartment);
+			config.setConnectionPoolSize(1);
+			SignatureProvider authProvider = new SignatureProvider(tenantId, userId, fingerprint, privateKey, passPhrase.toCharArray());
+			config.setRequestTimeout(15000);
+			config.setAuthorizationProvider(authProvider);
+			config.configureDefaultRetryHandler(1, 10);
+			config.setDefaultCompartment(compartment);
 			connection = NoSQLHandleFactory.createNoSQLHandle(config);
 		}
 		
@@ -150,8 +150,8 @@ public class Database
 			
 			PrepareRequest request = new PrepareRequest().setStatement(sql);
 			request.setGetQueryPlan(true);
-            oracle.nosql.driver.ops.PreparedStatement prepared = connection.prepare(request).getPreparedStatement();
-            
+			oracle.nosql.driver.ops.PreparedStatement prepared = connection.prepare(request).getPreparedStatement();
+			
 			return new _PreparedStatement(prepared, connection);
 		}
 		
@@ -290,8 +290,8 @@ public class Database
 				{
 					result = connection.query(request);
 					result.getResults().forEach(item -> { values.add(item); });
-		            continuationKey = result.getContinuationKey();
-		        } while (continuationKey != null);
+					continuationKey = result.getContinuationKey();
+				} while (continuationKey != null);
 				
 				this.result = new _ResultSet(values);
 				
